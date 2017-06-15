@@ -3,7 +3,7 @@ resource "aws_vpc" "terraform-vpc-dev" {
   cidr_block = "${var.vpc_cidr}"
   enable_dns_hostnames = true
   tags {
-      Name = "terraform-vpc-dev"
+      Name = "terraform-vpc-dev_2"
   }
 }
 
@@ -21,7 +21,7 @@ resource "aws_vpc" "terraform-vpc-dev" {
      availability_zone = "us-west-2a"
 
      tags {
-         Name = "Private terraform Subnet A"
+         Name = "Private terraform Subnet 2A"
      }
  }
 
@@ -34,7 +34,7 @@ resource "aws_vpc" "terraform-vpc-dev" {
      }
 
      tags {
-         Name = "Private terraform Subnet"
+         Name = "Private terraform Subnet 2"
      }
  }
 

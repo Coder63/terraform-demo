@@ -1,7 +1,7 @@
 # Our default security group to access
 # the instances over SSH and HTTP
 resource "aws_security_group" "ssh_http_sg" {
-  name = "ssh_http_sg"
+  name = "ssh_http_sg_2"
   description = "Allow SSH & http host"
   ingress {
     from_port = 22
@@ -24,7 +24,7 @@ resource "aws_security_group" "ssh_http_sg" {
   }
   vpc_id = "${var.terraform_vpc_id}"
   tags {
-      Name = "terraform_ssh_http_sg"
+      Name = "terraform_ssh_http_sg_2"
   }
 }
 

@@ -7,7 +7,7 @@ resource "aws_instance" "test" {
   subnet_id="${var.terraform_subnet_id}"
 
   tags {
-    Name = "terraform-CoreInfra-one"
+    Name = "terraform-CoreInfra-two"
     SG= "${var.ssh_http_sg_id}"
     VPC="${var.terraform_vpc_id}"
     subnet = "${var.terraform_subnet_id}"
