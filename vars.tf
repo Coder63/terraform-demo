@@ -19,7 +19,7 @@ variable "profile"{
 
 variable "vpc_cidr" {
   description = "CIDR for the whole VPC"
-  default = "172.0.0.0/16"
+  default = "171.0.0.0/16"
 }
 
 variable "ip_range" {
