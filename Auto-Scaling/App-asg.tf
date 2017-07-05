@@ -1,7 +1,7 @@
 resource "aws_launch_configuration" "App-lc" {
     name_prefix = "App-lc-"
-    image_id = "${var.ami}"
-    instance_type = "${var.instance_type}"
+    image_id = "ami-efd0428f"
+    instance_type = "t2.micro"
 
     lifecycle {
         create_before_destroy = true
