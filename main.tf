@@ -35,5 +35,5 @@ module "Auto-Scaling" {
 }
 
 module "Cloud_Watch" {
-  source = "./Cloud_Watch"
+  source = "./Cloud-Watch"
 }
