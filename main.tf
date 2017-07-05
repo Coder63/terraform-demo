@@ -29,3 +29,11 @@ module "FSS" {
   terraform_vpc_id = "${module.VPC.terraform_vpc_id}"
   terraform_subnet_id="${module.VPC.terraform_subnet_id}"
 }
+
+module "Auto-Scaling" {
+  source = "./Auto-Scaling"
+}
+
+module "Cloud_Watch" {
+  source = "./Cloud_Watch"
+}
