@@ -3,6 +3,8 @@ provider "aws" {
   profile = "${var.profile}"
 }
 
+
+
 module "VPC" {
   source = "./VPC"
   vpc_cidr= "${var.vpc_cidr}"
